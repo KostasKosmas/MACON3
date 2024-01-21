@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="MACON.CSS">
+  <title>Your Mobile App</title>
+</head>
+<body>
+  <div id="main-container">
+    <div id="page1">
+      <button id="registrationButton" onclick="goToRegistration()">ΚΑΤΑΧΩΡΗΣΗ</button>
+      <button id="searchButton" onclick="goToSearch()">ΑΝΑΖΗΤΗΣΗ</button>
+    </div>
+
+    <div id="page2" style="display: none;">
+      <input type="text" id="nameInput" placeholder="ΦΑΤΝΩΜΑ">
+      <input type="text" id="codeInput" placeholder="CODE">
+      <button id="completeButton" onclick="completeRegistration()">COMPLETE</button>
+      <button id="returnButton1" onclick="goToPage1()">RETURN</button>
+    </div>
+
+    <div id="page3" style="display: none;">
+      <input type="text" id="searchCodeInput" placeholder="Enter CODE">
+      <button id="searchButton" onclick="search()">SEARCH</button>
+      <div id="searchResult"></div>
+      <button id="returnButton2" onclick="goToPage1()">RETURN</button>
+    </div>
+  </div>
+
+  <script src="MACON2.JS"></script>
+</body>
+</html>
